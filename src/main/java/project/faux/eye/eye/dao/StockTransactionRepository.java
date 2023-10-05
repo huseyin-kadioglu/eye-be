@@ -1,17 +1,9 @@
 package project.faux.eye.eye.dao;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import project.faux.eye.eye.model.dto.TransactionDto;
-
-import java.util.List;
+import project.faux.eye.eye.model.entity.TransactionModel;
 
 @Repository
-public class StockTransactionRepository {
-    public void create(TransactionDto dto) {
-
-    }
-
-    public List<TransactionDto> getAllTransactions() {
-        return null;
-    }
+public interface StockTransactionRepository extends JpaRepository<TransactionModel, String> {
 }
