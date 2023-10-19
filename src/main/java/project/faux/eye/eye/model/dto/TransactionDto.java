@@ -5,6 +5,7 @@ import lombok.Setter;
 import project.faux.eye.eye.model.Side;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -14,4 +15,5 @@ public class TransactionDto implements Serializable {
     private double cost;
     private Side side;
     private double share;
+    private LocalDate localDate;
 }
